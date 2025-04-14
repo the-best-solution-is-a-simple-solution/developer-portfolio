@@ -38,3 +38,11 @@ While this project is primarily a personal portfolio, if you wish to fork or ada
 1. Please respect the original author's work
 2. Follow the attribution requirements
 3. Make significant personal modifications
+
+
+Can simulate github pages local structure for testing by running
+
+### Simulate GitHub Pages structure
+1. mkdir -p test/developer-portfolio
+2. cp -r out/* test/developer-portfolio/
+3. npx serve test -p 3000

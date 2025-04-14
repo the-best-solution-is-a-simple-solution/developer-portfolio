@@ -1,7 +1,6 @@
 "use client";
 // @flow strict
 import {isValidEmail} from "@/utils/check-email";
-import axios from "axios";
 import {useState} from "react";
 import {TbMailForward} from "react-icons/tb";
 import {toast} from "react-toastify";
@@ -32,14 +31,23 @@ function ContactForm() {
         } else {
             setError({...error, required: false});
         }
-        ;
+
 
         try {
             setIsLoading(true);
-            await axios.post(
-                `${process.env.NEXT_PUBLIC_FORMSPREE_URL}`,
-                userInput
-            );
+            const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(userInput)
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to send");
+            }
+
             toast.success("Message sent successfully!");
             setUserInput({
                 name: "",

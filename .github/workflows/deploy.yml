@@ -19,11 +19,14 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm install
-      - run: npm run build
-      - run: touch out/.nojekyll
-      - run: echo '/developer-portfolio' > out/CNAME
-
+      - name: Build
+        env:
+          NEXT_PUBLIC_FORMSPREE_URL: ${{ secrets.NEXT_PUBLIC_FORMSPREE_URL }}
+        run: |
+          npm install
+          npm run build
+          touch out/.nojekyll
+          echo '/developer-portfolio' > out/CNAME
 
       - uses: actions/upload-pages-artifact@v3
         with:
