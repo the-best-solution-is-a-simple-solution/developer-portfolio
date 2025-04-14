@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
     output: 'export',
-    assetPrefix: '',
-    basePath: '',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
