@@ -2,6 +2,8 @@
 
 const nextConfig = {
     output: 'export',
+    basePath: '/developer-portfolio',
+    assetPrefix: '/developer-portfolio/',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
@@ -30,7 +32,7 @@ const nextConfig = {
         NEXT_PUBLIC_FORMSPREE_URL: process.env.NEXT_PUBLIC_FORMSPREE_URL,
     },
     experimental: {
-        optimizePackageImports: ['react-toastify'],
+        optimizePackageImports: ['react-toastify']
     }
 }
 
