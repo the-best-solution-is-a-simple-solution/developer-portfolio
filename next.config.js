@@ -2,8 +2,8 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: process.env.NODE_ENV === 'production' ? '/developer-portfolio' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/developer-portfolio/' : '',
+    basePath: '/developer-portfolio',
+    assetPrefix: '/developer-portfolio/',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
