@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: process.env.NODE_ENV === 'production' ? '/repo-name' : '',
+    assetPrefix: '',
+    basePath: '',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
