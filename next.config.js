@@ -2,8 +2,6 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/developer-portfolio',
-    assetPrefix: '/developer-portfolio/',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
