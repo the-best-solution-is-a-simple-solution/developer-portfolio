@@ -35,13 +35,18 @@ function ContactForm() {
 
         try {
             setIsLoading(true);
+            const formData = new FormData();
+            formData.append('name', userInput.name);
+            formData.append('email', userInput.email);
+            formData.append('message', userInput.message);
+
             const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
+                    "Accept": "application/json",
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: JSON.stringify(userInput)
+                body: formData
             });
 
             if (!response.ok) {
