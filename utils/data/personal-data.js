@@ -2,7 +2,7 @@ export const personalData = {
   name: "Aron Szabo",
   profile: '/profile.png',
   designation: "Computer Systems Technology Student",
-  description: "My name is Aron Szabo. I'm a student in Computer Systems Technology at Saskatchewan Polytechnic. My goal is to become a very professional and savvy Systems Administrator. I am a quick learner with an autodidact mindset. I love learning and exploring new technologies and have a strong problem-solving attitude. I enjoy making systems run efficiently, and securing businesses from cyber threats. My main area of expertise currently is in the Microsoft realm, which includes Active Directory Directory services, Intune, Azure servers, and Windows Server. I do also have knowledge of Linux systems as well, Apache, LDAP, are no strangers to me. I am available for any kind of job opportunities that suits my skills and interests.",
+  description: "My name is Aron Szabo. I'm a student in Computer Systems Technology at Saskatchewan Polytechnic. My goal is to become a very professional and savvy Systems Administrator. I am a quick learner with an autodidact mindset. I love learning and exploring new technologies and have a strong problem-solving attitude. I enjoy making systems run efficiently, and securing businesses from cyber threats. My main area of expertise currently is in the Microsoft realm, which includes Active Directory Services, Intune, Azure servers, and Windows Server. I also have experience with Linux systems as well, Apache, LDAP, and various other common Linux services. I am available for any kind of job opportunities that suits my skills and interests.",
   email: 'szaboaron7777@gmail.com',
   phone: '+1 (639) 317-6634',
   address: 'Canada',
