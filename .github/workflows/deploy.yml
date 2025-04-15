@@ -26,7 +26,6 @@ jobs:
           npm install
           npm run build
           touch out/.nojekyll
-          echo '/developer-portfolio' > out/CNAME
 
       - uses: actions/upload-pages-artifact@v3
         with:
