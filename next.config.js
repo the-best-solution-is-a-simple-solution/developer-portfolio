@@ -2,13 +2,13 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/developer-portfolio',
-    assetPrefix: '/developer-portfolio/',
+    assetPrefix: 'https://www.aronsec.com',
     reactStrictMode: true,
     sassOptions: {
         includePaths: [require('path').join(__dirname, 'css')], // Changed from 'styles' to 'css'
     },
     images: {
+        domains: ['www.aronsec.com'],
         unoptimized: true,
         remotePatterns: [
             {
