@@ -13,6 +13,10 @@ export const metadata = {
     title: "Aron Szabo | Systems Administrator",
     description:
         "This is the portfolio of Aron Szabo. I am a student at Saskatchewan Polytechnic in the Computer Systems Technology program. I am studying to be a systems administrator, and picking up some developer experience on the way there. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
 
 export default function RootLayout({children}) {
