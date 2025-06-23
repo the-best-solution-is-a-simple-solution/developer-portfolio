@@ -8,5 +8,5 @@ export const personalData = {
   address: 'Canada',
   github: 'https://github.com/the-best-solution-is-a-simple-solution',
   devUsername: "the-best-solution-is-a-simple-solution",
-  resume: "https://saskpolytech-my.sharepoint.com/:w:/g/personal/szabo5144_saskpolytech_ca/EQ3Wss48ukdNiDbaM6F7JywBRPGuXkH8c9frW4rOx4NMdA"
+  resume: "/AronSzaboResume.pdf"
 }
