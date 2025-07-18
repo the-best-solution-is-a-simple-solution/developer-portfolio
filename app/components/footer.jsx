@@ -15,7 +15,7 @@ function Footer() {
                     </p>
 
                     <p className="text-sm">
-                        Last edited 17/04/2025
+                        Last edited 18/07/2025
                     </p>
                 </div>
 
