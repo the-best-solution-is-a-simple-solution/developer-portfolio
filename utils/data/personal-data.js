@@ -8,5 +8,5 @@ export const personalData = {
   address: 'Canada',
   github: 'https://github.com/the-best-solution-is-a-simple-solution',
   devUsername: "the-best-solution-is-a-simple-solution",
-  resume: "/AronSzaboResume.pdf"
+  resume: "/aron_szabo_resume.pdf"
 }
